@@ -143,6 +143,13 @@ abstract class BaseSelf implements Self {
             return this.user.asContributor();
         }
 
+        @Override
+        public ApiTokens apiTokens() {
+            throw new UnsupportedOperationException(
+               "#apiTokens is NYU"
+            );
+        }
+
     }
 
 }

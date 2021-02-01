@@ -121,6 +121,13 @@ public final class StoredUser implements User {
     }
 
     @Override
+    public ApiTokens apiTokens() {
+        throw new UnsupportedOperationException(
+            "#apiTokens is NYI"
+        );
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(this.username, this.provider);
     }

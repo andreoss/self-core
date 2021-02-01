@@ -66,4 +66,11 @@ public interface User {
      * @return Contributor or null, if this User is not one.
      */
     Contributor asContributor();
+
+    /**
+     * User's API tokens.
+     *
+     * @return ApiTokens.
+     */
+    ApiTokens apiTokens();
 }

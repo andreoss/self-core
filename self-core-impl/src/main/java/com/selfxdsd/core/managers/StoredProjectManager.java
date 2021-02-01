@@ -629,5 +629,12 @@ public final class StoredProjectManager implements ProjectManager {
                 "The PM is never a Contributor."
             );
         }
+
+        @Override
+        public ApiTokens apiTokens() {
+            throw new UnsupportedOperationException(
+                "#apiTokens() is NYI"
+            );
+        }
     }
 }
